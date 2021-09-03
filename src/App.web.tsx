@@ -84,7 +84,7 @@ const Header: React.FC = () => {
   return (
     <ImageBackground
       accessibilityRole="image"
-      source={require('./logo.png')}
+      source={require('./assets/logo.png')}
       style={[
         headerStyles.background,
         {
