@@ -1,5 +1,17 @@
 import React, {Fragment} from 'react';
-import {View, Text, StyleSheet, useColorScheme, SafeAreaView, StatusBar, ScrollView, Platform, TouchableOpacity, ImageBackground, Linking} from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  useColorScheme,
+  SafeAreaView,
+  StatusBar,
+  ScrollView,
+  Platform,
+  TouchableOpacity,
+  ImageBackground,
+  Linking,
+} from 'react-native';
 
 // Copy from react-native/Libraries/NewAppScreen
 const Colors = {
@@ -10,7 +22,7 @@ const Colors = {
   dark: '#444',
   darker: '#222',
   black: '#000',
-}
+};
 
 const links = [
   {
@@ -72,7 +84,7 @@ const Header: React.FC = () => {
   return (
     <ImageBackground
       accessibilityRole="image"
-      source={require('./web/logo.png')}
+      source={require('./logo.png')}
       style={[
         headerStyles.background,
         {

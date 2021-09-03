@@ -16,7 +16,7 @@ const babelLoaderConfiguration = {
   // Add every directory that needs to be compiled by Babel during the build.
   include: [
     path.resolve(__dirname, 'index.web.js'), // Entry to your application
-    path.resolve(__dirname, 'App.web.tsx'), // Change this to your main App file
+    path.resolve(__dirname, 'src', 'App.web.tsx'), // Change this to your main App file
     path.resolve(__dirname, 'src'),
     ...compileNodeModules,
   ],
@@ -45,6 +45,7 @@ const imageLoaderConfiguration = {
     loader: 'url-loader',
     options: {
       name: '[name].[ext]',
+      esModule: false,
     },
   },
 };
